@@ -103,7 +103,7 @@ header {
 .services__list {
     display: flex;
     margin-bottom: 24px;
-    overflow-x: visible;
+    overflow-x: auto;
 }
 
 .services__item {
