@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page">
@@ -16,67 +17,6 @@
                 <img src="images/header/icons/menu.svg" alt="посмотреть меню">
             </a>
         </div>
-        <!-- <div class="header__menu">
-            <div class="header__icon">
-                <a class="header__link" href="#">
-                    <img src="images/header/icons/menu.svg" alt="посмотреть меню">
-                </a>
-            </div>
-            <nav class="navigation navigation--hidden">
-                <ul class="navigation__list list-reset">
-                    <li class="navigation__item">
-                        <a class="navigation__link navigation__link--active link-reset" href="#">Ремонт техники</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link navigation__link--active link-reset" href="#">Услуги и сервисы</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link navigation__link--active link-reset" href="#">Корпоративным клиентам</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link navigation__link--active link-reset" href="#">Продавцам техники</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link navigation__link--active link-reset" href="#">Партнерам</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link navigation__link--active link-reset" href="#">Производителям</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link navigation__link--active link-reset" href="#">Наши сервисные центры</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link navigation__link--active link-reset" href="#">Контакты</a>
-                    </li>
-                </ul>
-                <div class="navigation__contact-info">
-                    <ul class="icons-list list-reset">
-                        <li class="header__icon">
-                            <a class="header__link link-reset" href="tel:+78008908900">
-                                <img src="images/header/icons/tel.svg" alt="позвонить">
-                            </a>
-                        </li>
-                        <li class="header__icon">
-                            <a class="header__link link-reset" href="#">
-                                <img src="images/header/icons/chat.svg" alt="написать в чат">
-                            </a>
-                        </li>
-                        <li class="header__icon">
-                            <a class="header__link link-reset" href="#">
-                                <img src="images/header/icons/profile.svg" alt="посмотреть профиль">
-                            </a>
-                        </li>
-                    </ul>
-                    <a class="navigation__link link-reset" href="mailto:mail@cps.com">mail@cps.com</a>
-                    <a class="navigation__link navigation__link--size-b link-reset" href="tel:+78008908900">8&nbsp;800&nbsp;890 89&nbsp;00</a>
-                </div>
-            </nav>
-            <div class="lang-switcher">
-                <a class="lang-switcher__link link-reset" href="#">RU</a>
-                <a class="lang-switcher__link link-reset" href="#">EN</a>
-                <a class="lang-switcher__link link-reset" href="#">CH</a>
-            </div>
-        </div> -->
         <div class="header__logo">
             <img src="images/logo/CPSLogo.svg" alt="логотип компании">
         </div>
@@ -97,7 +37,7 @@
                 </a>
             </li>
         </ul>
-        <div class="header__form">
+        <div class="header__icons">
             <div class="header__icon">
                 <a class="header__link" href="#">
                     <img src="images/header/icons/repair.svg" alt="оставить заявку">
@@ -112,29 +52,29 @@
     </header>
     <main class="main">
         <section class="services">
-            <div class="page__container">
+            <div class="services__container">
                 <h1 class="services__title">Услуги и&nbsp;сервисы</h1>
                 <ul class="services__list list-reset">
-                    <li class="services__item services__item--active list-reser">
-                        <a class="link-reset" href="#">Ремонтируемые бренды</a>
+                    <li class="services__item services__item--active">
+                        <a class="services__link link-reset" href="#">Ремонтируемые бренды</a>
                     </li>
                     <li class="services__item services__item--active">
-                        <a class="link-reset" href="#">Дополнительные услуги</a>
+                        <a class="services__link link-reset" href="#">Дополнительные услуги</a>
                     </li>
                     <li class="services__item services__item--active">
-                        <a class="link-reset" href="#">Цены на&nbsp;услуги</a>
+                        <a class="services__link link-reset" href="#">Цены на&nbsp;услуги</a>
                     </li>
                     <li class="services__item services__item--active">
-                        <a class="link-reset" href="#">Адреса сервисных центров</a>
+                        <a class="services__link link-reset" href="#">Адреса сервисных центров</a>
                     </li>
                     <li class="services__item services__item--active">
-                        <a class="link-reset" href="#">Специальные цены</a>
+                        <a class="services__link link-reset" href="#">Специальные цены</a>
                     </li>
                     <li class="services__item services__item--active">
-                        <a class="link-reset" href="#">Отзывы</a>
+                        <a class="services__link link-reset" href="#">Отзывы</a>
                     </li>
                 </ul>
-                <div class="about">
+                <article class="about">
                     <p class="about__content">
                         Мы&nbsp;являемся авторизованным сервисным центром по&nbsp;ремонту 
                         техники Dell. Только у&nbsp;нас вы&nbsp;можете отремонтировать свой 
@@ -146,10 +86,14 @@
                         по&nbsp;рекомендациям&nbsp;и, в&nbsp;свою очередь, советуют нас родным 
                         и&nbsp;близким.
                     </p>
-                    <a class="about__link link-reset" href="#">Читать дальше</a>
+                    <button class="page__btn">
+                        Читать далее
+                    </button>
+                    <img class="services__image" src="/images/services/cpsPicture.jpg" alt="">
+                </article>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 </body>
 
