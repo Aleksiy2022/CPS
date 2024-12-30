@@ -20,7 +20,7 @@
         <div class="header__logo">
             <img src="images/logo/CPSLogo.svg" alt="логотип компании">
         </div>
-        <ul class="icons-list icons-list--hidden list-reset">
+        <ul class="icons-list icons-list--display list-reset">
             <li class="header__icon">
                 <a class="header__link link-reset" href="tel:+78008908900">
                     <img src="images/header/icons/tel.svg" alt="позвонить">
@@ -53,45 +53,54 @@
     <main class="main">
         <section class="services">
             <div class="services__container">
-                <h1 class="services__title">Услуги и&nbsp;сервисы</h1>
-                <ul class="services__list list-reset">
-                    <li class="services__item services__item--active">
-                        <a class="services__link link-reset" href="#">Ремонтируемые бренды</a>
-                    </li>
-                    <li class="services__item services__item--active">
-                        <a class="services__link link-reset" href="#">Дополнительные услуги</a>
-                    </li>
-                    <li class="services__item services__item--active">
-                        <a class="services__link link-reset" href="#">Цены на&nbsp;услуги</a>
-                    </li>
-                    <li class="services__item services__item--active">
-                        <a class="services__link link-reset" href="#">Адреса сервисных центров</a>
-                    </li>
-                    <li class="services__item services__item--active">
-                        <a class="services__link link-reset" href="#">Специальные цены</a>
-                    </li>
-                    <li class="services__item services__item--active">
-                        <a class="services__link link-reset" href="#">Отзывы</a>
-                    </li>
-                </ul>
-                <article class="about">
-                    <p class="about__content">
-                        Мы&nbsp;являемся авторизованным сервисным центром по&nbsp;ремонту 
-                        техники Dell. Только у&nbsp;нас вы&nbsp;можете отремонтировать свой 
-                        ноутбук Dell с&nbsp;официальной гарантией производителя. 
-                        
-                        Мы&nbsp;успешно работаем с&nbsp;1992 года и&nbsp;заслужили репутацию 
-                        надежного партнера, что подтверждает большое количество постоянных 
-                        клиентов. Мы&nbsp;гордимся тем, что к&nbsp;нам обращаются 
-                        по&nbsp;рекомендациям&nbsp;и, в&nbsp;свою очередь, советуют нас родным 
-                        и&nbsp;близким.
-                    </p>
-                    <button class="page__btn">
-                        Читать далее
-                    </button>
-                    <img class="services__image" src="images/services/cpsPicture.jpg" alt="">
-                </article>
+                <div class="services__menu">
+                    <h1 class="services__title">Услуги и&nbsp;сервисы</h1>
+                    <div class="interactive-icons">
+                        <a class="interactive-icons__link link-reset" href="">
+                            Оставить заявку
+                            <img src="images/services/repair.svg" alt="">
+                        </a>
+                        <a class="interactive-icons__link link-reset" href="">
+                            Статус ремонта
+                            <img src="images/services/checkstatus.svg" alt="">
+                        </a>
+                    </div>
+                    <ul class="services__list list-reset">
+                        <li class="services__item services__item--active">
+                            <a class="services__link link-reset" href="#">Ремонтируемые бренды</a>
+                        </li>
+                        <li class="services__item services__item--active">
+                            <a class="services__link link-reset" href="#">Дополнительные услуги</a>
+                        </li>
+                        <li class="services__item services__item--active">
+                            <a class="services__link link-reset" href="#">Цены на&nbsp;услуги</a>
+                        </li>
+                        <li class="services__item services__item--active">
+                            <a class="services__link link-reset" href="#">Адреса сервисных центров</a>
+                        </li>
+                        <li class="services__item services__item--active">
+                            <a class="services__link link-reset" href="#">Специальные цены</a>
+                        </li>
+                        <li class="services__item services__item--active">
+                            <a class="services__link link-reset" href="#">Отзывы</a>
+                        </li>
+                    </ul>
                 </div>
+                <article class="about">
+                    <div class="about__content">
+                        <p class="about__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                            
+                            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                        </p>
+                        <button class="page__btn">
+                            Читать далее
+                        </button>
+                    </div>
+                    <picture class="services__image">
+                        <source srcset="images/services/cpsPicture.jpg" media="(max-width: 1119px)">
+                        <img class="services__image" src="images/services/cpsPicture.png" alt="Изображение логотипа компании">
+                    </picture>
+                </article>
             </div>
         </section>
     </main>
