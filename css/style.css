@@ -270,6 +270,7 @@ header {
 @media (min-width: 1120px) {
     .page {
         margin: 0 auto;
+        max-width: 1120px;
     }
 
     .services__container {
