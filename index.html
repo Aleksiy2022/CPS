@@ -12,42 +12,42 @@
 
 <body class="page">
     <header class="header">
-        <div class="header__icon">
-            <a class="header__link" href="#">
-                <img src="images/header/icons/menu.svg" alt="посмотреть меню">
-            </a>
-        </div>
+        <a class="icon__link" href="#">
+            <img src="images/header/icons/menu.svg" alt="посмотреть меню">
+        </a>
         <div class="header__logo">
             <img src="images/logo/CPSLogo.svg" alt="логотип компании">
         </div>
         <ul class="icons-list icons-list--display list-reset">
-            <li class="header__icon">
-                <a class="header__link link-reset" href="tel:+78008908900">
+            <li class="icon__link">
+                <a class="link-reset" href="tel:+78008908900">
                     <img src="images/header/icons/tel.svg" alt="позвонить">
                 </a>
             </li>
-            <li class="header__icon">
-                <a class="header__link link-reset" href="#">
+            <li class="icon__link">
+                <a class="link-reset" href="#">
                     <img src="images/header/icons/chat.svg" alt="написать в чат">
                 </a>
             </li>
-            <li class="header__icon">
-                <a class="header__link link-reset" href="#">
+            <li class="icon__link">
+                <a class="link-reset" href="#">
                     <img src="images/header/icons/profile.svg" alt="посмотреть профиль">
                 </a>
             </li>
         </ul>
         <div class="header__icons">
-            <div class="header__icon">
-                <a class="header__link" href="#">
-                    <img src="images/header/icons/repair.svg" alt="оставить заявку">
-                </a>
-            </div>
-            <div class="header__icon">
-                <a class="header__link" href="">
-                    <img src="images/header/icons/checkstatus.svg" alt="оставить заявку">
-                </a>
-            </div>
+            <ul class="icons-list list-reset">
+                <li class="icon__link">
+                    <a class="link-reset" href="#">
+                        <img src="images/header/icons/repair.svg" alt="оставить заявку">
+                    </a>
+                </li>
+                <li class="icon__link">
+                    <a class="link-reset" href="">
+                        <img src="images/header/icons/checkstatus.svg" alt="проверить статус">
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
     <main class="main">
@@ -55,36 +55,42 @@
             <div class="services__container">
                 <div class="services__menu">
                     <h1 class="services__title">Услуги и&nbsp;сервисы</h1>
-                    <div class="interactive-icons">
-                        <a class="interactive-icons__link link-reset" href="">
-                            Оставить заявку
-                            <img src="images/services/repair.svg" alt="">
-                        </a>
-                        <a class="interactive-icons__link link-reset" href="">
-                            Статус ремонта
-                            <img src="images/services/checkstatus.svg" alt="">
-                        </a>
-                    </div>
-                    <ul class="services__list list-reset">
-                        <li class="services__item services__item--active">
-                            <a class="services__link link-reset" href="#">Ремонтируемые бренды</a>
+                    <ul class="interactive-icons list-reset">
+                        <li class="interactive-icons__item">
+                            <a class="interactive-icons__link link-reset" href="#">
+                                Оставить заявку
+                                <img src="images/services/repair.svg" alt="оставить заявку">
+                            </a>
                         </li>
-                        <li class="services__item services__item--active">
-                            <a class="services__link link-reset" href="#">Дополнительные услуги</a>
-                        </li>
-                        <li class="services__item services__item--active">
-                            <a class="services__link link-reset" href="#">Цены на&nbsp;услуги</a>
-                        </li>
-                        <li class="services__item services__item--active">
-                            <a class="services__link link-reset" href="#">Адреса сервисных центров</a>
-                        </li>
-                        <li class="services__item services__item--active">
-                            <a class="services__link link-reset" href="#">Специальные цены</a>
-                        </li>
-                        <li class="services__item services__item--active">
-                            <a class="services__link link-reset" href="#">Отзывы</a>
+                        <li class="interactive-icons__item">
+                            <a class="interactive-icons__link link-reset" href="#">
+                                Статус ремонта
+                                <img src="images/services/checkstatus.svg" alt="узнать статус ремонта">
+                            </a>
                         </li>
                     </ul>
+                    <nav class="main-nav">
+                        <ul class="main-nav__list list-reset">
+                            <li class="main-nav__item main-nav__item--active">
+                                <a class="main-nav__link link-reset" href="#">Ремонтируемые бренды</a>
+                            </li>
+                            <li class="main-nav__item main-nav__item--active">
+                                <a class="main-nav__link link-reset" href="#">Дополнительные услуги</a>
+                            </li>
+                            <li class="main-nav__item main-nav__item--active">
+                                <a class="main-nav__link link-reset" href="#">Цены на&nbsp;услуги</a>
+                            </li>
+                            <li class="main-nav__item main-nav__item--active">
+                                <a class="main-nav__link link-reset" href="#">Адреса сервисных центров</a>
+                            </li>
+                            <li class="main-nav__item main-nav__item--active">
+                                <a class="main-nav__link link-reset" href="#">Специальные цены</a>
+                            </li>
+                            <li class="main-nav__item main-nav__item--active">
+                                <a class="main-nav__link link-reset" href="#">Отзывы</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
                 <article class="about">
                     <div class="about__content">
