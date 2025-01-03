@@ -29,12 +29,13 @@ header {
     align-items: center;
 }
 
-.header__icon {
+.icon__link {
+    display: block;
     margin-right: 16px;
     align-self: center;
 }
 
-.header__icon:last-child {
+.icon__link:last-child {
     margin-right: 0;
 }
 
@@ -45,7 +46,6 @@ header {
 
 .header__icons {
     position: relative;
-    display: flex;
     margin-left: auto;
 }
 
@@ -59,6 +59,12 @@ header {
     background-color: #eaeaea;
 }
 
+.icons-list {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
 .icons-list--display {
     display: none;
 }
@@ -70,8 +76,6 @@ header {
 
     .icons-list--display {
         display: flex;
-        justify-content: flex-end;
-        margin-left: auto;
     }
 
     .header__logo::before {
@@ -141,18 +145,18 @@ header {
     display: none;
 }
 
-.services__list {
+.main-nav__list {
     display: flex;
     overflow-x: auto;
 }
 
-.services__item {
+.main-nav__item {
     box-sizing: border-box;
     height: 40px;
     white-space: nowrap;
 }
 
-.services__link {
+.main-nav__link {
     display: block;
     box-sizing: border-box;
     border: 2px solid transparent;
@@ -164,14 +168,14 @@ header {
     line-height: 24px;
 }
 
-.services__link:hover {
+.main-nav__link:hover {
     border: 2px solid #B8FFEC;
     border-radius: 6px;
     background-color: #FFFFFF;
 }
 
 @media (hover: none) {
-    .services__link:focus {
+    .main-nav__link:focus {
         border: 2px solid #B8FFEC;
         border-radius: 6px;
         background-color: #FFFFFF;
@@ -282,7 +286,7 @@ header {
         left: -32px;
     }
 
-    .services__list {
+    .main-nav__list {
         flex-wrap: wrap;
     }
 
