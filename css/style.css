@@ -352,7 +352,7 @@
     gap: 24px;
 }
 
-.navigation-btn {
+.navigation__btn {
     position: relative;
     height: 32px;
     min-height: 24px;
@@ -366,19 +366,20 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     font-weight: 500;
+    color: #1B1C21;
 }
 
-.navigation-btn:hover {
+.navigation__btn:hover {
     background-color: rgba(65, 246, 215, 0.3);
     cursor: pointer;
 }
 
-.navigation-btn:focus {
+.navigation__btn:focus {
     background-color: rgba(65, 246, 215, 0);
     color: #7E7E82;
 }
 
-.navigation-btn:focus::before {
+.navigation__btn:focus::before {
     position: absolute;
     content: "";
     width: 4px;
