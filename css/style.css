@@ -344,10 +344,6 @@
     margin-right: auto;
 }
 
-/* .navigation {
-    margin-bottom: 268px;
-} */
-
 .navigation-list {
     display: flex;
     flex-direction: column;
