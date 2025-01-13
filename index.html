@@ -13,19 +13,23 @@
 <body class="page">
     <aside class="menu">
         <header class="menu__header">
-            <button class="icon-btn">
+            <!-- Для класса icon-btn добавил hover с прозрачностью. -->
+            <button class="icon-btn"> 
                 <img src="images/menu/burger.svg" alt="закрыть меню">
             </button>
-            <div class="menu__logo">
+            <!-- Логотип сделал блоком по БЭМ, div заменил на ссылку. -->
+            <a class="logo"> 
                 <img src="images/logo/CPSLogo.svg" alt="логотип компании">
-            </div>
+            </a>
             <button class="icon-btn">
                 <img src="images/menu/search.svg" alt="закрыть меню">
             </button>
         </header>
         <nav class="navigation">
             <ul class="navigation-list list-reset">
+                <!-- Кнопки заменил на ссылки. -->
                 <li class="navigation__item">
+                    <!-- На класс navigation__link добавил hover с прозрачностью. -->
                     <a href="#" class="navigation__link link-reset" tabindex="0">Ремонт техники</a>
                 </li>
                 <li class="navigation__item">
@@ -52,35 +56,35 @@
             </ul>
         </nav>
         <footer class="menu__footer">
-            <div class="menu__contact-info">
-                <ul class="icons-list list-reset">
-                    <li class="icons-list__item">
-                        <button class="icon-btn" >
-                            <img src="images/header/icons/tel.svg" alt="позвонить">
-                        </button>
-                    </li>
-                    <li class="icons-list__item">
-                        <button class="icon-btn" >
-                            <img src="images/header/icons/chat.svg" alt="написать в чат">
-                        </button>
-                    </li>
-                    <li class="icons-list__item">
-                        <button class="icon-btn" >
-                            <img src="images/header/icons/profile.svg" alt="посмотреть профиль">
-                        </button>
-                    </li>
-                </ul>
+            <!-- Убрал обертку для списка с сылками. -->
+            <ul class="icons-list list-reset">
+                <li class="icons-list__item">
+                    <button class="icon-btn" >
+                        <img src="images/header/icons/tel.svg" alt="позвонить">
+                    </button>
+                </li>
+                <li class="icons-list__item">
+                    <button class="icon-btn" >
+                        <img src="images/header/icons/chat.svg" alt="написать в чат">
+                    </button>
+                </li>
+                <li class="icons-list__item">
+                    <button class="icon-btn" >
+                        <img src="images/header/icons/profile.svg" alt="посмотреть профиль">
+                    </button>
+                </li>
+            </ul>
+            <!-- Обернул контактную информацию в тег address. -->
+            <address class="menu__contacts">
                 <a class="menu__email link-reset" href="mailto:mail@cps.com">mail@cps.com</a>
                 <a class="menu__tel link-reset" href="tel:+78008908900">8&nbsp;800&nbsp;890 8900</a>
-            </div>
-            <div class="lang-switcher">
-                <input class="lang-switcher__radio" type="radio" name="lang-switcher" id="RU" checked>
-                <label class="lang-switcher__label" for="RU">RU</label>
-                <input class="lang-switcher__radio" type="radio" name="lang-switcher" id="EN">
-                <label class="lang-switcher__label" for="EN">EN</label>
-                <input class="lang-switcher__radio" type="radio" name="lang-switcher" id="CH">
-                <label class="lang-switcher__label" for="CH">CH</label>
-            </div>
+            </address>
+            <!-- Заменил div на ul, радио-кнопки заменил на ссылки. -->
+            <ul class="lang-switcher-list list-reset">
+                <li class="lang-switcher__item"><a href="#" class="lang-switcher__link link-reset">RU</a></li>
+                <li class="lang-switcher__item"><a href="#" class="lang-switcher__link link-reset">EN</a></li>
+                <li class="lang-switcher__item"><a href="#" class="lang-switcher__link link-reset">CH</a></li>
+            </ul>
         </footer>
     </aside>
 </body>
