@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,84 +8,22 @@
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body class="page">
-    <aside class="menu">
-        <header class="menu__header">
-            <!-- Для класса icon-btn добавил hover с прозрачностью. -->
-            <button class="icon-btn"> 
-                <img src="images/menu/burger.svg" alt="закрыть меню">
-            </button>
-            <!-- Логотип сделал блоком по БЭМ, div заменил на ссылку. -->
-            <a class="logo"> 
-                <img src="images/logo/CPSLogo.svg" alt="логотип компании">
-            </a>
-            <button class="icon-btn">
-                <img src="images/menu/search.svg" alt="закрыть меню">
-            </button>
-        </header>
-        <nav class="navigation">
-            <ul class="navigation-list list-reset">
-                <!-- Кнопки заменил на ссылки. -->
-                <li class="navigation__item">
-                    <!-- На класс navigation__link добавил hover с прозрачностью. -->
-                    <a href="#" class="navigation__link link-reset" tabindex="0">Ремонт техники</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link link-reset" tabindex="1">Услуги и сервисы</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link link-reset" tabindex="3">Корпоративным клиентам</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link link-reset" tabindex="4">Продавцам техники</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link link-reset" tabindex="5">Партнерам</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link link-reset" tabindex="6">Производителям</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link link-reset" tabindex="7">Наши сервисные центры</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link link-reset" tabindex="8">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-        <footer class="menu__footer">
-            <!-- Убрал обертку для списка с сылками. -->
-            <ul class="icons-list list-reset">
-                <li class="icons-list__item">
-                    <button class="icon-btn" >
-                        <img src="images/header/icons/tel.svg" alt="позвонить">
-                    </button>
-                </li>
-                <li class="icons-list__item">
-                    <button class="icon-btn" >
-                        <img src="images/header/icons/chat.svg" alt="написать в чат">
-                    </button>
-                </li>
-                <li class="icons-list__item">
-                    <button class="icon-btn" >
-                        <img src="images/header/icons/profile.svg" alt="посмотреть профиль">
-                    </button>
-                </li>
-            </ul>
-            <!-- Обернул контактную информацию в тег address. -->
-            <address class="menu__contacts">
-                <a class="menu__email link-reset" href="mailto:mail@cps.com">mail@cps.com</a>
-                <a class="menu__tel link-reset" href="tel:+78008908900">8&nbsp;800&nbsp;890 8900</a>
-            </address>
-            <!-- Заменил div на ul, радио-кнопки заменил на ссылки. -->
-            <ul class="lang-switcher-list list-reset">
-                <li class="lang-switcher__item"><a href="#" class="lang-switcher__link link-reset">RU</a></li>
-                <li class="lang-switcher__item"><a href="#" class="lang-switcher__link link-reset">EN</a></li>
-                <li class="lang-switcher__item"><a href="#" class="lang-switcher__link link-reset">CH</a></li>
-            </ul>
-        </footer>
-    </aside>
+    <section class="repair-brands">
+        <h2 class="repair-brands__title">Ремонт техники различных брендов</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
 </body>
-
 </html>
