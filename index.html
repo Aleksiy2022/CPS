@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,81 +7,113 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 </head>
-
 <body class="page">
-    <aside class="menu">
-        <header class="menu__header">
-            <button class="icon-btn">
-                <img src="images/menu/burger.svg" alt="закрыть меню">
-            </button>
-            <div class="menu__logo">
-                <img src="images/logo/CPSLogo.svg" alt="логотип компании">
-            </div>
-            <button class="icon-btn">
-                <img src="images/menu/search.svg" alt="закрыть меню">
-            </button>
-        </header>
-        <nav class="navigation">
-            <ul class="navigation-list list-reset">
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link link-reset" tabindex="0">Ремонт техники</a>
+    <section class="brands">
+        <h2 class="brands__title text text--title">Ремонт техники различных брендов</h2>
+        <div class="brands-box">
+            <ul class="brands-list list-reset">
+                <li class="brands-list__item">
+                    <div class="brand">
+                        <img class="brand__logo" src="images/brands/lenovo.svg" alt="">
+                        <a class="brand__link link-reset" href="#">
+                            <img class="brand__icon" src="images/services/go.svg" alt="Иконка-ссылки">
+                        </a>
+                    </div>
                 </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link link-reset" tabindex="1">Услуги и сервисы</a>
+                <li class="brands-list__item">
+                    <div class="brand">
+                        <img class="brand__logo" src="images/brands/samsung.svg" alt="">
+                        <a class="brand__link link-reset" href="#">
+                            <img class="brand__icon" src="images/services/go.svg" alt="Иконка-ссылки">
+                        </a>
+                    </div>
                 </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link link-reset" tabindex="3">Корпоративным клиентам</a>
+                <li class="brands-list__item">
+                    <div class="brand">
+                        <img class="brand__logo" src="images/brands/apple.svg" alt="">
+                        <a class="brand__link link-reset" href="#">
+                            <img class="brand__icon" src="images/services/go.svg" alt="Иконка-ссылки">
+                        </a>
+                    </div>
                 </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link link-reset" tabindex="4">Продавцам техники</a>
+                <li class="brands-list__item">
+                    <div class="brand">
+                        <img class="brand__logo" src="images/brands/viewsonic.svg" alt="">
+                        <a class="brand__link link-reset" href="#">
+                            <img class="brand__icon" src="images/services/go.svg" alt="Иконка-ссылки">
+                        </a>
+                    </div>
                 </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link link-reset" tabindex="5">Партнерам</a>
+                <li class="brands-list__item">
+                    <div class="brand">
+                        <img class="brand__logo" src="images/brands/bosh.svg" alt="">
+                        <a class="brand__link link-reset" href="#">
+                            <img class="brand__icon" src="images/services/go.svg" alt="Иконка-ссылки">
+                        </a>
+                    </div>
                 </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link link-reset" tabindex="6">Производителям</a>
+                <li class="brands-list__item">
+                    <div class="brand">
+                        <img class="brand__logo" src="images/brands/hp.svg" alt="">
+                        <a class="brand__link link-reset" href="#">
+                            <img class="brand__icon" src="images/services/go.svg" alt="Иконка-ссылки">
+                        </a>
+                    </div>
                 </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link link-reset" tabindex="7">Наши сервисные центры</a>
+                <li class="brands-list__item">
+                    <div class="brand">
+                        <img class="brand__logo" src="images/brands/acer.svg" alt="">
+                        <a class="brand__link link-reset" href="#">
+                            <img class="brand__icon" src="images/services/go.svg" alt="Иконка-ссылки">
+                        </a>
+                    </div>
                 </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link link-reset" tabindex="8">Контакты</a>
+                <li class="brands-list__item">
+                    <div class="brand">
+                        <img class="brand__logo" src="images/brands/sony.svg" alt="">
+                        <a class="brand__link link-reset" href="#">
+                            <img class="brand__icon" src="images/services/go.svg" alt="Иконка-ссылки">
+                        </a>
+                    </div>
+                </li>
+                <li class="brands-list__item">
+                    <div class="brand">
+                        <img class="brand__logo" src="images/brands/lenovo.svg" alt="">
+                        <a class="brand__link link-reset" href="#">
+                            <img class="brand__icon" src="images/services/go.svg" alt="Иконка-ссылки">
+                        </a>
+                    </div>
+                </li>
+                <li class="brands-list__item">
+                    <div class="brand">
+                        <img class="brand__logo" src="images/brands/samsung.svg" alt="">
+                        <a class="brand__link link-reset" href="#">
+                            <img class="brand__icon" src="images/services/go.svg" alt="Иконка-ссылки">
+                        </a>
+                    </div>
+                </li>
+                <li class="brands-list__item">
+                    <div class="brand">
+                        <img class="brand__logo" src="images/brands/apple.svg" alt="">
+                        <a class="brand__link link-reset" href="#">
+                            <img class="brand__icon" src="images/services/go.svg" alt="Иконка-ссылки">
+                        </a>
+                    </div>
                 </li>
             </ul>
-        </nav>
-        <footer class="menu__footer">
-            <div class="menu__contact-info">
-                <ul class="icons-list list-reset">
-                    <li class="icons-list__item">
-                        <button class="icon-btn" >
-                            <img src="images/header/icons/tel.svg" alt="позвонить">
-                        </button>
-                    </li>
-                    <li class="icons-list__item">
-                        <button class="icon-btn" >
-                            <img src="images/header/icons/chat.svg" alt="написать в чат">
-                        </button>
-                    </li>
-                    <li class="icons-list__item">
-                        <button class="icon-btn" >
-                            <img src="images/header/icons/profile.svg" alt="посмотреть профиль">
-                        </button>
-                    </li>
-                </ul>
-                <a class="menu__email link-reset" href="mailto:mail@cps.com">mail@cps.com</a>
-                <a class="menu__tel link-reset" href="tel:+78008908900">8&nbsp;800&nbsp;890 8900</a>
-            </div>
-            <div class="lang-switcher">
-                <input class="lang-switcher__radio" type="radio" name="lang-switcher" id="RU" checked>
-                <label class="lang-switcher__label" for="RU">RU</label>
-                <input class="lang-switcher__radio" type="radio" name="lang-switcher" id="EN">
-                <label class="lang-switcher__label" for="EN">EN</label>
-                <input class="lang-switcher__radio" type="radio" name="lang-switcher" id="CH">
-                <label class="lang-switcher__label" for="CH">CH</label>
-            </div>
-        </footer>
-    </aside>
+            <div class="slider__pagination swiper-pagination"></div>
+            <button class="btn brands__btn">
+                <img class="btn__image" src="images/services/arrow.svg" alt="Иконка кнопки">
+                <span class="btn__text">Показать всё</span>
+            </button>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
-
 </html>
