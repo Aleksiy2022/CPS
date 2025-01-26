@@ -1,9 +1,43 @@
-var init = true;
-var swiper;
+let init = true;
+let swiper;
 const brandBoxElement = document.querySelector('.brands-box');
-const brandsListElement = document.querySelector('.brands-list')
+const brandsListElement = document.querySelector('.brands-list');
 const brandsListItems = document.querySelectorAll('.brands-list__item');
 const brandsBtn = document.querySelector('.brands__btn');
+const aboutBtn = document.querySelector('.about__btn');
+
+aboutBtn.onclick = function() {
+  let aboutText = document.querySelector('.about__text');
+  let btnChildren = aboutBtn.children;
+
+  aboutText.classList.toggle('max-height');
+  aboutBtn.classList.toggle('btn--open');
+
+  if (aboutBtn.classList.contains('btn--open')) {
+    
+    btnChildren[0].style.transform = 'rotateX(180deg)';
+    btnChildren[1].textContent = 'Скрыть';
+  } else {
+    btnChildren[0].style.transform = 'rotateX(0deg)';
+    btnChildren[1].textContent = 'Показать всё';
+  }
+
+}
+
+brandsBtn.onclick = function () {
+  brandsListElement.classList.toggle('max-height');
+  brandsBtn.classList.toggle('btn--open');
+  let btnChildren = brandsBtn.children;
+
+  if (brandsBtn.classList.contains('btn--open')) {
+    
+    btnChildren[0].style.transform = 'rotateX(180deg)';
+    btnChildren[1].textContent = 'Скрыть';
+  } else {
+    btnChildren[0].style.transform = 'rotateX(0deg)';
+    btnChildren[1].textContent = 'Показать всё';
+  }
+}
 
 function swiperCard() {
   if (window.innerWidth < 768) {
@@ -42,18 +76,4 @@ function swiperCard() {
 swiperCard();
 window.addEventListener("resize", swiperCard);
 
-brandsBtn.onclick = function () {
-  brandsListElement.classList.toggle('brands-list--max-height');
-  brandsBtn.classList.toggle('btn--open');
-  let btnChildren = brandsBtn.children;
-  console.log(btnChildren[0])
 
-  if (brandsBtn.classList.contains('btn--open')) {
-    
-    btnChildren[0].style.transform = 'rotateX(180deg)';
-    btnChildren[1].textContent = 'Скрыть';
-  } else {
-    btnChildren[0].style.transform = 'rotateX(0deg)';
-    btnChildren[1].textContent = 'Показать всё';
-  }
-}

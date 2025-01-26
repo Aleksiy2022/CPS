@@ -97,7 +97,7 @@
     display: none;
 }
 
-@media (min-width: 768px) and (max-width: 1119px) {
+@media (min-width: 768px) {
     .header__logo {
         margin-left: 43px;
     }
@@ -122,7 +122,7 @@
     }
 }
 
-@media(min-width: 1120px) {
+@media(min-width: 1440px) {
     .header {
         display: none;
     }
@@ -132,11 +132,13 @@
 
 .services {
     background-color: #F8F8F8;
+    min-width: 320px;
+    padding-bottom: 24px;
+    border-top: 1px solid #D9FFF5;
 }
 
 .services__container {
-    padding-top: 24px;
-    min-width: 320px;
+    height: 100%;
 }
 
 .services__menu {
@@ -149,9 +151,7 @@
     min-width: 304px;
     min-height: 40px;
     margin: 0;
-    margin-right: auto;
-    margin-bottom: 24px;
-    margin-left: 16px;
+    padding: 24px 16px;
     font-size: 28px;
     line-height: 40px;
     letter-spacing: -0.6px;
@@ -162,14 +162,28 @@
     content: "";
     width: 4px;
     height: 40px;
-    left: -16px;
+    left: 0;
     background-color: #41F6D7;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 
+.services__title::after {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 40px;
+    right: 0;
+    top: 88px;
+    background-image: linear-gradient(to right, rgba(248, 248, 248, 0), rgba(248, 248, 248, 1));
+}
+
 .interactive-icons {
     display: none;
+}
+
+.main-nav {
+    padding-left: 16px;
 }
 
 .main-nav__list {
@@ -212,6 +226,13 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.about__content {
+    height: 100%;
+    padding-bottom: 16px;
 }
 
 .about__text {
@@ -254,6 +275,7 @@
     -moz-transform: translateY(20px);
     -ms-transform: translateY(20px);
     -o-transform: translateY(20px);
+    margin-bottom: 16px;
 }
 
 .btn--hidden {
@@ -265,11 +287,14 @@
     text-align: left;
 }
 
-.services__image {
+.main-image {
     width: 100%;
     height: auto;
-    min-width: 320px;
-    min-height: 176px;
+}
+
+.main-image__img {
+    width: 100%;
+    height: auto;
 }
 
 @media (min-width: 768px) {
@@ -280,12 +305,11 @@
     }
 
     .services__title {
-        margin-left: 0;
-        margin-bottom: 32px;
+        padding: 24px 24px 32px;
     }
 
-    .services__title::before {
-        left: -24px;
+    .services__title::after {
+        top: 96px;
     }
 
     .services__menu {
@@ -299,14 +323,18 @@
         gap: 48px;
     }
 
+    .about__content {
+        padding-bottom: 0;
+    }
+
     .about__text {
-        padding: 0;
+        padding-left: 24px;
         min-width: 312px;
         height: 160px;
         margin-bottom: 10px;
     }
 
-    .services__image {
+    .main-image__img {
         min-width: 360px;
         min-height: 208px;
         border-top-left-radius: 15px;
@@ -320,30 +348,31 @@
         max-width: 1120px;
     }
 
-    .services__container {
-        min-height: 535px;
-        padding: 42px 32px;
+    .services__title {
+        padding: 42px 32px 8px 32px;
     }
 
-    .services__title::before {
-        left: -32px;
+    .main-nav {
+        padding-left: 32px;
     }
 
     .main-nav__list {
         flex-wrap: wrap;
+        column-gap: 10px;
     }
 
     .about__text {
         width: 490px;
         height: 160px;
+        padding: 16px 0 0 32px;
     }
 
     .interactive-icons {
         display: flex;
         gap: 32px;
         position: absolute;
-        top: 0;
-        right: -1px;
+        top: 42px;
+        right: 32px;
         color: #1B1C21;
         line-height: 24px;
         font-size: 16px;
@@ -362,6 +391,10 @@
         width: 100%;
         min-height: 130px;
         margin-bottom: 7px;
+    }
+
+    .main-image {
+        padding-right: 32px;
     }
 }
 
@@ -490,6 +523,7 @@
 .brands {
     background-color: #f8f8f8;
     min-height: 234px;
+    border-top: 1px solid #D9FFF5;
 }
 
 .brands-box {
@@ -502,7 +536,7 @@
     padding: 16px;
     width: 100%;
     min-height: 56px;
-    border-top: 1px solid #D9FFF5;
+    
     background-image: linear-gradient(to right, #f8f8f8, #ffffff);
 }
 
@@ -558,6 +592,10 @@
         min-height: 322px;
     }
 
+    .brands__title {
+        padding: 16px 24px;
+    }
+
     .brands__title::after {
         display: none;
     }
@@ -574,10 +612,6 @@
         overflow: hidden;
     }
 
-    .brands-list--max-height {
-        height: 100%;
-    }
-
     .brand {
         min-width: 224px;
     }
@@ -588,9 +622,21 @@
         min-width: 240px;
     }
 
+    .brand-box {
+        padding: 24px 32px 0 32px;
+    }
+
+    .brands__title {
+        padding: 16px 32px;
+    }
+
     .brands-list {
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        padding: 24px 32px 0 32px;
         column-gap: 32px;
+        padding: 24px 32px 0 32px;
     }
+}
+
+.max-height {
+    height: 100%;
 }
