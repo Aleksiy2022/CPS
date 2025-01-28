@@ -1,0 +1,22 @@
+@use '_variables';
+
+.icons-list {
+    display: flex;
+    justify-content: flex-start;
+
+    &--display {
+        display: none;
+
+        @media (min-width: $screen-m) {
+            display: flex;
+        }
+    }
+
+    &__item {
+        margin-right: 16px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+@use '_variables';
+
+.header {
+    display: flex;
+    min-width: 320px;
+    min-height: 88px;
+    padding: 16px;
+    background-color: $bg-color-header;
+    align-items: center;
+
+    @media(min-width: $screen-xl) {
+        display: none;
+    }
+
+    &__logo {
+        position: relative;
+        margin-right: auto;
+
+        @media (min-width: $screen-m) {
+            margin-left: 43px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 10px;
+                left: -45px;
+                margin-left: 16px;
+                width: 2px;
+                height: 32px;
+                background-color: $bg-color-header__logo-before;
+            }
+        }
+    }
+
+    &__icons {
+        position: relative;
+        margin-left: auto;
+
+        @media (min-width: $screen-m) {
+            margin-left: 42px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 4px;
+            left: -20px;
+            width: 2px;
+            height: 32px;
+            background-color: $bg-color-header__icons-before;
+        }
+    }
+}

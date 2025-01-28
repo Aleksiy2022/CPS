@@ -1,0 +1,18 @@
+@use '_variables';
+
+icon-btn {
+    margin-right: 16px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
