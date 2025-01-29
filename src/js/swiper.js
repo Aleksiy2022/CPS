@@ -1,4 +1,6 @@
 'use strict'
+import Swiper from 'swiper/bundle'
+import 'swiper/css/bundle'
 
 let brandBoxElement = document.querySelector('.brands-box')
 let brandsListItems = document.querySelectorAll('.brands-list__item')
@@ -20,7 +22,6 @@ export function swiperCard() {
       }
 
       swiper = new Swiper('.swiper', {
-        modules: [Pagination],
         loop: true,
         pagination: {
           el: '.swiper-pagination',

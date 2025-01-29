@@ -16,7 +16,16 @@
     },
     "plugins": ["prettier", "import"],
     "rules": {
-      "import/no-unresolved": [2, { "caseSensitive": false }],
+      "import/no-unresolved": [
+        2, 
+        { "caseSensitive": false,
+          "ignore": 
+          [
+            "swiper/bundle",
+            "swiper/css/bundle"
+          ] 
+        }
+      ],
       "import/order": [
         2,
         {
