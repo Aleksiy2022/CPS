@@ -7,7 +7,7 @@
     &--display {
         display: none;
 
-        @media (min-width: $screen-m) {
+        @media (min-width: variables.$screen-m) {
             display: flex;
         }
     }
