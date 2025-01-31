@@ -1,0 +1,85 @@
+@use '_variables';
+@use '_mixins';
+
+.services {
+    padding: 24px 0 18px 0;
+    background-color: variables.$bg-color-services;
+
+    @media(min-width: variables.$screen-m) {
+        padding: 24px 0 28px 0;
+    }
+
+    @media(min-width: variables.$screen-l) {
+        padding: 42px 0 42px 0;
+    }
+
+    &__menu {
+        position: relative;
+        margin-bottom: 24px;
+
+        @media (min-width: variables.$screen-m) {
+            margin-bottom: 32px;
+        }
+
+        @media(min-width: variables.$screen-l) {
+            margin-bottom: 7px;
+            padding: 0;
+        }
+    }
+
+    &__title {
+        position: relative;
+        min-width: 304px;
+        min-height: 40px;
+        margin: 0 auto 24px 16px;
+
+        @media (min-width: variables.$screen-m) {
+            margin-left: 24px;
+            margin-bottom: 32px;
+        }
+
+        @media (min-width: variables.$screen-l) {
+            margin-left: 32px;
+            margin-bottom: 32px;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 4px;
+            height: 40px;
+            left: -16px;
+            background-color: #41F6D7;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+
+            @media (min-width: variables.$screen-m) {
+                left: -24px;
+            }
+            
+            @media (min-width: variables.$screen-l) {
+                left: -32px;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 64px;
+            right: 0;
+            width: 24px;
+            height: 40px;
+            background-image: linear-gradient(to right, rgba(248, 248, 248, 0), rgba(248, 248, 248, 1));
+
+            @media (min-width: variables.$screen-m) {
+                top: 72px;
+            }
+            
+            @media (min-width: variables.$screen-l) {
+                display: none;
+            }
+        }
+
+        @extend .text-title--active;
+    }
+}

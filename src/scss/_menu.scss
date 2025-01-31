@@ -1,0 +1,14 @@
+@use '_variables';
+
+.menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    width: 320px;
+    min-height: 1024px;
+    padding: 23px 24px;
+    padding-bottom: 32px;
+    background-color: #ffffff;
+    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2);
+}

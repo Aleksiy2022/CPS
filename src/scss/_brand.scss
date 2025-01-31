@@ -1,0 +1,21 @@
+@use '_variables';
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px 0 16px;
+    min-width: 240px;
+    min-height: 72px;
+    background-color: variables.$bg-color-brand;
+    border: 1px solid variables.$border-color-brand;;
+    border-radius: 6px;
+
+    @media (min-width: variables.$screen-m) {
+        min-width: 224px;
+    }
+
+    @media (min-width: variables.$screen-l) {
+        min-width: 240px;
+    }
+}

@@ -1,10 +1,35 @@
-.interactive-elems-text {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    color: #1B1C21;
+@use '_variables';
+
+.text {
+    line-height: variables.$line-height-large;
+    font-size: variables.$font-size-medium;
+    letter-spacing: variables.$letter-spacing-narrower;
+    color: variables.$text-color-content;
+    font-weight: variables.$font-weight-larger;
 }
 
-.text-lighter {
-    color: #7E7E82;
+.text--small {
+    @extend .text;
+    line-height: variables.$line-height-small;
+    font-size: variables.$font-size-small;
+    letter-spacing: variables.$letter-spacing-wider;
+    font-weight: variables.$font-weight-normal;
+}
+
+.text--lighter {
+    @extend .text;
+    color: variables.$text-color-content--lighter;
+}
+
+.text-title {
+    @extend .text--lighter;
+    text-transform: uppercase;
+    font-weight: variables.$font-weight-normal;
+}
+
+.text-title--active {
+    line-height: variables.$line-height-title;
+    font-size: variables.$font-size-large;
+    letter-spacing: variables.$letter-spacing-narrowest;
+    color: variables.$text-color-content;
 }

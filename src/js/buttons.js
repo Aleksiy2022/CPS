@@ -1,47 +1,38 @@
-'use strict'
+let buttons = document.querySelectorAll('.btn')
 
-let aboutBtn = document.querySelector('.about__btn')
-let brandsBtn = document.querySelector('.brands__btn')
-let brandsListElement = document.querySelector('.brands-list')
-
-function setupAboutBtn(btn) {
-  btn.onclick = function () {
-    let aboutText = document.querySelector('.about__text')
-    let btnChildren = btn.children
-
-    btn.classList.toggle('btn--open')
-    aboutText.classList.toggle('max-height')
-
-    if (btn.classList.contains('btn--open')) {
-      btnChildren[0].style.transform = 'rotateX(180deg)'
-      btnChildren[1].textContent = 'Скрыть'
-    } else {
-      btnChildren[0].style.transform = 'rotateX(0deg)'
-      btnChildren[1].textContent = 'Показать всё'
-    }
+function switcherBlockHeight(element, btn) {
+  element.classList.toggle('open')
+  let text = btn.querySelector('.btn__text')
+  let btnImage = btn.querySelector('.btn__image')
+  btnImage.style.transform = 'rotateX(0deg)'
+  if (
+    text.textContent === 'Показать всё' ||
+    text.textContent === 'Читать далее'
+  ) {
+    text.textContent = 'Скрыть'
+    btnImage.style.transform = 'rotateX(180deg)'
+  } else if (element.classList.contains('about__text')) {
+    text.textContent = 'Читать далее'
+  } else {
+    text.textContent = 'Показать всё'
   }
 }
 
-function setupBrandsBtn(btn) {
-  btn.onclick = function () {
-    brandsListElement.classList.toggle('max-height')
-    btn.classList.toggle('btn--open')
-    let btnChildren = btn.children
-
-    if (btn.classList.contains('btn--open')) {
-      btnChildren[0].style.transform = 'rotateX(180deg)'
-      btnChildren[1].textContent = 'Скрыть'
-    } else {
-      btnChildren[0].style.transform = 'rotateX(0deg)'
-      btnChildren[1].textContent = 'Показать всё'
+function setBtnClickEvent(btn) {
+  btn.addEventListener('click', {
+    handleEvent(evt) {
+      let block
+      let curBtn = evt.currentTarget
+      if (curBtn.classList.contains('about__btn')) {
+        block = document.querySelector('.about__text')
+      } else if (curBtn.classList.contains('brands__btn')) {
+        block = document.querySelector('.brands-list')
+      }
+      switcherBlockHeight(block, curBtn)
     }
-  }
+  })
 }
 
-if (aboutBtn) {
-  setupAboutBtn(aboutBtn)
-}
-
-if (brandsBtn) {
-  setupBrandsBtn(brandsBtn)
+for (let btn of buttons) {
+  setBtnClickEvent(btn)
 }

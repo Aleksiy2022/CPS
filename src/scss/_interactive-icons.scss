@@ -1,0 +1,15 @@
+@use '_variables';
+@use '_mixins';
+
+.interactive-icons {
+    display: none;
+
+    @media (min-width: variables.$screen-l) {
+        position: absolute;
+        display: flex;
+        padding-right: 32px;
+        gap: 32px;
+        top: 0;
+        right: 0;  
+    }
+}

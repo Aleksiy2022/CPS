@@ -1,11 +1,15 @@
 @use '_variables';
+@use '_mixins';
 
-icon-btn {
+.icon-btn {
+    display: flex;
+    gap: 8px;
+    align-items: center;
     margin-right: 16px;
     padding: 0;
     border: none;
     background-color: transparent;
-    width: 40px;
+    min-width: 40px;
     height: 40px;
 
     &:hover {
@@ -15,4 +19,6 @@ icon-btn {
     &:last-child {
         margin-right: 0;
     }
+
+    @extend .text;
 }

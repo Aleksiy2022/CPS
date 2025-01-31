@@ -1,39 +1,42 @@
-$bg-color-header:                            #ffffff;
-$bg-color-header__icons-before:              #eaeaea;
-$bg-color-header__logo-before:               #eaeaea;
-$bg-color-services:                          #F8F8F8;
+$bg-color-page:                              #ffffff;
+$bg-color-header-pseudoelements:             #eaeaea;
+$bg-color-services:                          #f8f8f8;
 $bg-color-services__title-before:            #41F6D7;
-$bg-color-main-nav__link-hover:              #ffffff;
-$bg-color-main-nav__link-focus:              #ffffff;
+$bg-color-main-nav__link--active:            #ffffff;
 $bg-color-menu:                              #ffffff;
 $bg-color-navigation__link-focus-before:     #41F6D7;
+$bg-color-brand:                             #ffffff;
 $bg-color-brands:                            #f8f8f8;
+
 $border-color-sections:                      #D9FFF5;
+$border-color-main-nav__link--active:        #B8FFEC;
+$border-color-brand:                         #eaeaea;
+$border-color-brands__title:                 #D9FFF5;
 
 $shadow-color-menu:                          rgba(14, 24, 80, 0.2);
-
-$border-color-main-nav__link-hover:          #B8FFEC;
-$border-color-main-nav__link-focus:          #B8FFEC;
 
 $text-color-content:                         #1B1C21;
 $text-color-content--lighter:                #7E7E82;
 
-$line-height-services__title:                  40px;
-$line-height-about__text:                      18px;
+$line-height-smallest:        16px;
+$line-height-small:           18px;
+$line-height-medium:          20px;
+$line-height-large:           24px;
+$line-height-title:           40px;
 
-$font-size-interactive-element:                16px;
-$font-weight:                                  400;
-$font-size-services__title:                    28px;
-$font-size-about__text:                        14px;
-$font-size-interactive-element:                16px;
-$font-weight-interactive-element:              500;
+$font-weight-normal:          400;
+$font-weight-larger:          500;
 
-$letter-spacing-interactive-element:           -0.2px;
-$letter-spacing-services__title:               -0.6px;
-$letter-spacing-about__text:                    0.2px;
+$font-size-small:             14px;
+$font-size-medium:            16px;
+$font-size-large:             28px;
 
-$screen-xs:                                    320px;
-$screen-s:                                     360px;
-$screen-m:                                     768px;
-$screen-l:                                     1120px;
-$screen-xl:                                    1440px;
+$letter-spacing-wider:        0.2px;
+$letter-spacing-narrower:    -0.2px;
+$letter-spacing-narrowest:   -0.6px;
+
+$screen-xs:                   320px;
+$screen-s:                    360px;
+$screen-m:                    768px;
+$screen-l:                    1120px;
+$screen-xl:                   1440px;

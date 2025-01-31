@@ -5,10 +5,9 @@
     min-width: 320px;
     min-height: 88px;
     padding: 16px;
-    background-color: variables.$bg-color-header;
     align-items: center;
 
-    @media(min-width: variables.$screen-xl) {
+    @media(min-width: variables.$screen-l) {
         display: none;
     }
 
@@ -27,7 +26,7 @@
                 margin-left: 16px;
                 width: 2px;
                 height: 32px;
-                background-color: variables.$bg-color-header__logo-before;
+                background-color: variables.$bg-color-header-pseudoelements;
             }
         }
     }
@@ -47,7 +46,7 @@
             left: -20px;
             width: 2px;
             height: 32px;
-            background-color: variables.$bg-color-header__icons-before;
+            background-color: variables.$bg-color-header-pseudoelements;
         }
     }
 }

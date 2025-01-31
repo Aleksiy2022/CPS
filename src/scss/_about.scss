@@ -1,0 +1,48 @@
+@use '_variables';
+@use '_mixins';
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    @media (min-width: variables.$screen-m) {
+        min-width: 720px;
+        min-height: 208px;
+        flex-wrap: nowrap;
+        gap: 48px;
+    }
+
+    &__content {
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        margin: 0;
+        min-width: 288px;
+        height: 90px;
+        padding: 0 16px;
+        margin-bottom: 16px;
+        overflow-y: hidden;
+        white-space: pre-line;
+        vertical-align: top;
+
+        @media (min-width: variables.$screen-m) {
+            padding: 0 0 0 24px;
+            min-width: 312px;
+            height: 160px;
+            margin-bottom: 10px;
+        }
+
+        @media(min-width: variables.$screen-l) {
+            padding-left: 32px;
+        }
+
+        @media (min-width: variables.$screen-xl) {
+            width: 490px;
+            height: 160px;
+        }
+
+        @extend .text--small;
+    }
+}
