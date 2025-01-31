@@ -27,6 +27,8 @@ function setBtnClickEvent(btn) {
         block = document.querySelector('.about__text')
       } else if (curBtn.classList.contains('brands__btn')) {
         block = document.querySelector('.brands-list')
+      } else if (curBtn.classList.contains('technical__btn')) {
+        block = document.querySelector('.technical__list')
       }
       switcherBlockHeight(block, curBtn)
     }

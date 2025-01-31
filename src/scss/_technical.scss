@@ -1,0 +1,107 @@
+@use '_variables';
+@use '_mixins';
+
+.technical {
+    background-color: variables.$bg-color-technical;
+    min-height: 308px;
+
+    @media (min-width: variables.$screen-m) {
+        min-height: 322px;
+    }
+
+    &__title {
+        position: relative;
+        margin: 0;
+        padding: 16px;
+        width: 100%;
+        min-height: 56px;
+        border-top: 1px solid variables.$border-color-technical__title;
+        background-image: linear-gradient(to right, #f8f8f8, #ffffff);
+
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 24px;
+            height: 166px;
+            right: 0;
+            bottom: -182px;
+            background-image: linear-gradient(to right, rgba(248, 248, 248, 0), rgba(248, 248, 248, 1));
+            z-index: 10;
+
+            @media (min-width: variables.$screen-m) {
+                display: none;
+            }
+        }
+
+        @extend .text-title;
+    }
+
+    &__container {
+        position: relative;
+        padding-bottom: 36px;
+
+        @media (min-width: variables.$screen-m) {
+            padding-bottom: 32px;
+        }
+    }
+
+    &__list {
+        @media (min-width: variables.$screen-m) {
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+            grid-template-rows: repeat(auto-fit, 160px);
+            column-gap: 24px;
+            row-gap: 16px;
+            padding: 24px 24px 0 24px;
+            margin-bottom: 24px;
+            height: 184px;
+            overflow: hidden;
+    
+            @media (min-width: variables.$screen-l) {
+                grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+                padding: 24px 32px 0 32px;
+                column-gap: 32px;
+            }
+        }
+    }
+
+    &__item {
+        @media (min-width: variables.$screen-m) {
+            padding: 0 !important;
+        }
+        
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+        min-width: 240px;
+        min-height: 160px;
+        background-color: variables.$bg-color-technical__wrapper;
+        border: 1px solid variables.$border-color-technical__wrapper;
+        border-radius: 6px;
+
+        @media (min-width: variables.$screen-m) {
+            min-width: 224px;
+        }
+
+        @media (min-width: variables.$screen-l) {
+            min-width: 240px;
+        }
+    }
+
+    &__text {
+        align-self: flex-start;
+        height: 24px;
+
+        @extend .text
+    }
+
+    &__link {
+        align-self: flex-end;
+    }
+}

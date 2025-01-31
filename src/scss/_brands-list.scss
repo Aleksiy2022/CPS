@@ -2,6 +2,7 @@
 
 @media (min-width: variables.$screen-m) {
     .brands-list {
+        box-sizing: border-box;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
         grid-template-rows: repeat(auto-fit, 72px);
@@ -18,8 +19,8 @@
             column-gap: 32px;
         }
 
-        &--max-height {
-            height: 100%;
+        &__item {
+            padding: 0 !important;
         }
     }
 }

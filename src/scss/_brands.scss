@@ -3,7 +3,7 @@
 
 .brands {
     background-color: variables.$bg-color-brands;
-    min-height: 234px;
+    min-height: 220px;
 
     @media (min-width: variables.$screen-m) {
         min-height: 322px;
@@ -37,5 +37,13 @@
         @extend .text-title;
     }
 
+    &__container {
+        position: relative;
+        padding-bottom: 36px;
+
+        @media (min-width: variables.$screen-m) {
+            padding-bottom: 32px;
+        }
+    }
     
 }
