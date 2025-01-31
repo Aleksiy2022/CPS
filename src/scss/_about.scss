@@ -15,8 +15,13 @@
 
     &__content {
         margin-bottom: 16px;
-    }
+        height: 100%;
 
+        @media(min-width: variables.$screen-m) {
+            margin-bottom: 0;
+        }
+    }
+    
     &__text {
         margin: 0;
         min-width: 288px;
