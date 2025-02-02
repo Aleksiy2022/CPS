@@ -8,12 +8,25 @@
     font-weight: variables.$font-weight-larger;
 }
 
+.text--smallest {
+    line-height: variables.$line-height-smallest;
+    font-size: variables.$font-size-small;
+    color: variables.$text-color-content--lighter;
+}
+
 .text--small {
     @extend .text;
     line-height: variables.$line-height-small;
     font-size: variables.$font-size-small;
     letter-spacing: variables.$letter-spacing-wider;
     font-weight: variables.$font-weight-normal;
+}
+
+.text-info {
+    line-height: variables.$line-height-medium;
+    font-size: variables.$font-size-small;
+    letter-spacing: variables.$letter-spacing-wider;
+    color: variables.$text-color-content;
 }
 
 .text--lighter {

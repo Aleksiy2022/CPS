@@ -1,0 +1,180 @@
+@use '_variables';
+@use '_mixins';
+
+.offers {
+    background-color: variables.$bg-color-offers;
+   
+
+    @media (min-width: variables.$screen-m) {
+    }
+
+    &__title {
+        position: relative;
+        margin: 0;
+        padding: 16px;
+        width: 100%;
+        min-height: 56px;
+        border-top: 1px solid variables.$border-color-technical__title;
+        background-image: linear-gradient(to right, #f8f8f8, #ffffff);
+
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 24px;
+            height: 200px;
+            right: 0;
+            bottom: -216px;
+            background-image: linear-gradient(to right, rgba(248, 248, 248, 0), rgba(248, 248, 248, 1));
+            z-index: 10;
+
+            @media (min-width: variables.$screen-m) {
+                display: none;
+            }
+        }
+
+        @extend .text-title;
+    }
+
+    &__container {
+        padding-bottom: 24px;
+        @media (min-width: variables.$screen-m) {
+        }
+    }
+
+    &__list {
+        @media (min-width: variables.$screen-m) {
+
+            @media (min-width: variables.$screen-l) {
+               
+            }
+        }
+    }
+
+    &__item {
+        @media (min-width: variables.$screen-m) {
+        }
+        
+    }
+
+    &__details {
+        display: grid;
+        grid-template-areas: "offers-type-and-desc offers-type-and-desc" 
+                             "offers-price ."
+                             "offers-deadline offers-button";
+        gap: 16px;
+        padding: 16px;
+        min-width: 260px;
+        min-height: 200px;
+        background-color: variables.$bg-color-technical__wrapper;
+        border: 1px solid variables.$border-color-technical__wrapper;
+        border-radius: 6px;
+
+        @media (min-width: variables.$screen-m) {
+            
+        }
+
+        @media (min-width: variables.$screen-l) {
+            
+        }
+    }
+
+    &__type-title {
+        display: flex;
+        align-items: flex-start;
+        grid-area: offers-type-and-desc;
+
+        @extend .text--smallest;
+    }
+
+    &__price-title {
+        display: flex;
+        align-items: flex-start;
+        grid-area: offers-price;
+
+        @extend .text--smallest;
+    }
+
+    &__deadline-title {
+        display: flex;
+        align-items: flex-start;
+        grid-area: offers-deadline;
+
+        @extend .text--smallest;
+    }
+
+    &__description{
+        display: flex;
+        align-items: flex-start;
+        grid-area: offers-type-and-desc;
+        margin-top: 20px;
+
+        @extend .text--small;
+    }
+
+    &__price {
+        display: flex;
+        align-items: flex-start;
+        grid-area: offers-price;
+        margin-top: 20px;
+
+        @extend .text--small;
+    }
+
+    &__deadline {
+        display: flex;
+        align-items: flex-start;
+        grid-area: offers-deadline;
+        margin-top: 20px;
+        min-width: 93px;
+
+        @extend .text--small;
+    }
+
+    &__button {
+        position: relative;
+        grid-area: offers-button;
+        padding: 0;
+        width: 119px;
+        height: 32px;
+        background-color: transparent;
+        border: none;
+        margin-top: auto;
+        margin-left: auto;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__pagination {
+        position: absolute;
+        bottom: 16px !important;
+        display: block;
+        height: 12px;
+    }
+
+    &__info {
+        margin: 0;
+        margin-bottom: 16px;
+        padding: 0 16px;
+
+        @extend .text-info;
+    }
+
+    &__order {
+        padding: 0 16px;
+        min-height: 24px;
+        border: none;
+        background-color: transparent;
+        background-image: url('./../images/offers/Line.svg');
+        background-repeat: no-repeat;
+        background-position: right center;
+
+        @extend .text;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

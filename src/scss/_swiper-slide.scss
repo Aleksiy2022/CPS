@@ -1,3 +1,15 @@
 .swiper-slide {
-    padding: 16px 0 16px 16px;
+    padding: 16px 0;
+}
+
+.swiper-slide-active {
+    padding: 16px 0px 16px 16px;
+}
+
+.offers__list > .swiper-slide {
+    padding: 16px 0;
+}
+
+.offers__list > .swiper-slide-active {
+    padding: 16px 0px 16px 8px;
 }

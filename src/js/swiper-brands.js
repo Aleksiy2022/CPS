@@ -3,30 +3,33 @@ import Swiper from 'swiper/bundle'
 import 'swiper/css/bundle'
 
 let brandsBtn = document.querySelector('.brands__btn')
-let technicalBtn = document.querySelector('.technical__btn')
 let init = false
 
-export function swiperCard() {
+export function swiperCardBrands() {
   if (window.innerWidth < 768) {
     if (!init) {
-      console.log(!init)
       init = true
       brandsBtn.classList.add('btn--hidden')
-      technicalBtn.classList.add('btn--hidden')
-      new Swiper('.swiper', {
+      new Swiper('.brands__swiper', {
         loop: true,
+        enabled: true,
+        breakpoints: {
+          768: {
+            enabled: false
+          }
+        },
         pagination: {
-          el: '.swiper-pagination',
+          el: '.brands__pagination',
           clickable: true
         },
-        slidesPerView: 1.25
+        slidesPerView: 1.25,
+        spaceBetween: 16
       })
     }
   } else {
     init = false
     brandsBtn.classList.remove('btn--hidden')
-    technicalBtn.classList.remove('btn--hidden')
   }
 }
 
-swiperCard()
+swiperCardBrands()

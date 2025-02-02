@@ -23,7 +23,7 @@
             content: "";
             display: block;
             width: 24px;
-            height: 81px;
+            height: 72px;
             right: 0;
             bottom: -88px;
             background-image: linear-gradient(to right, rgba(248, 248, 248, 0), rgba(248, 248, 248, 1));
@@ -45,5 +45,52 @@
             padding-bottom: 32px;
         }
     }
+
+    &__list {
+        @media (min-width: variables.$screen-m) {
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+            grid-template-rows: repeat(auto-fit, 72px);
+            column-gap: 24px;
+            row-gap: 16px;
+            padding: 24px 24px 0 24px;
+            margin-bottom: 24px;
+            height: 184px;
+            overflow: hidden;
     
+            @media (min-width: variables.$screen-l) {
+                grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+                padding: 24px 32px 0 32px;
+                column-gap: 32px;
+            }
+        }
+    }
+    
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 16px 0 16px;
+        min-width: 240px;
+        min-height: 72px;
+        background-color: variables.$bg-color-brand;
+        border: 1px solid variables.$border-color-brand;;
+        border-radius: 6px;
+
+        @media (min-width: variables.$screen-m) {
+            min-width: 224px;
+        }
+
+        @media (min-width: variables.$screen-l) {
+            min-width: 240px;
+        }
+    }
+    
+    &__pagination {
+        position: absolute;
+        bottom: 28px !important;
+        display: block;
+        height: 12px;
+    }
 }

@@ -1,4 +1,6 @@
-import './js/swiper.js'
+import './js/swiper-brands.js'
+import './js/swiper-offers.js'
+import './js/swiper-technical.js'
 import './js/buttons.js'
 import './js/main-nav.js'
 import './scss/style.scss'
