@@ -46,3 +46,9 @@
     letter-spacing: variables.$letter-spacing-narrowest;
     color: variables.$text-color-content;
 }
+
+.text-footer {
+    line-height: variables.$line-height-medium;
+    font-size: variables.$font-size-small;
+    color: variables.$text-color-content--lighter;
+}
