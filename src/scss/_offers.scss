@@ -9,7 +9,7 @@
     @media (min-width: variables.$screen-m) {
     }
 
-    @media(min-width: variables.$screen-xl) {
+    @media (min-width: variables.$screen-xl) {
         max-width: 1120px;
     }
 
@@ -38,19 +38,34 @@
             }
         }
 
+        @media (min-width: variables.$screen-m) {
+            padding-left: 24px;
+        }
+
+        @media (min-width: variables.$screen-l) {
+            padding-left: 32px;
+        }
+
         @extend .text-title;
     }
 
     &__column-info {
         display: none;
+        min-width: 698px;
 
         @media (min-width: variables.$screen-m) {
             display: grid;
-            padding-left: 40px;
-            grid-template-columns: min(348px) min(74px) min(81px);
-            gap: 24px;
-            max-width: 1056px;
+            padding: 16px 40px 16px 40px;
+            grid-template-columns: minmax(364.5px, 446px) minmax(90.5px, 172px) minmax(97.5px, 179.5px) minmax(135.5px, 217.5px);
+            height: 48px;
         }
+
+        @media (min-width: variables.$screen-l) {
+            padding: 16px 16px 16px 56px;
+            max-width: 1120px;
+        }
+
+        @extend .text-offers__column-info;
     }
 
     &__container {
@@ -58,6 +73,10 @@
 
         @media (min-width: variables.$screen-m) {
             padding: 0 24px 24px 24px;
+        }
+
+        @media (min-width: variables.$screen-l) {
+            padding: 0 32px 32px 32px;
         }
     }
 
@@ -77,7 +96,7 @@
                 position: absolute;
                 display: block;
                 content: "";
-                width: calc(100% - 24px);
+                width: calc(100% - 32px);
                 height: 1px;
                 bottom: 0;
                 left: 50%;
@@ -94,7 +113,6 @@
         grid-template-areas: "offers-type-and-desc offers-type-and-desc" 
                              "offers-price ."
                              "offers-deadline offers-button";
-        gap: 16px;
         padding: 16px;
         min-width: 260px;
         min-height: 200px;
@@ -104,11 +122,14 @@
 
         @media (min-width: variables.$screen-m) {
             grid-template-areas: "offers-desc offers-price offers-deadline offers-button";
-            gap: 24px;
             min-height: 64px;
             border-radius: 0;
             border: none;
             background-color: transparent;
+        }
+
+        @media (min-width: variables.$screen-l) {
+            padding-left: 24px;
         }
     }
 
@@ -231,6 +252,10 @@
         margin: 0;
         margin-bottom: 16px;
         padding: 0 16px;
+
+        @media (min-width: variables.$screen-m) {
+            width: 421px;
+        }
 
         @extend .text-info;
     }

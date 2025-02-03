@@ -48,7 +48,7 @@
 }
 
 .text-footer {
-    line-height: variables.$line-height-medium;
+    line-height: variables.$line-height-smallest;
     font-size: variables.$font-size-small;
     color: variables.$text-color-content--lighter;
 }
@@ -70,4 +70,10 @@
 
 .text-lang-switcher__link {
     @extend .text;
+}
+
+.text-offers__column-info {
+    font-size: variables.$font-size-small;
+    line-height: variables.$line-height-smallest;
+    color: variables.$text-color-content--lighter;
 }

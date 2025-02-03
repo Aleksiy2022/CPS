@@ -10,6 +10,13 @@
     border-top: 1px solid variables.$border-color-footer;
     background-color: variables.$bg-color-footer;
 
+    @media (min-width: variables.$screen-m) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 0;
+    }
+
     @media(min-width: variables.$screen-xl) {
         max-width: 1120px;
         grid-area: footer;
@@ -18,11 +25,26 @@
     &__developer-info {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-content: flex-start;
+
+        @media (min-width: variables.$screen-m) {
+            width: 218px;
+            align-items: flex-start;
+        }
     }
 
     &__link {
+        @media (min-width: variables.$screen-m) {
+            width: 218px;
+        }
+
         @extend .text-footer;
+    }
+
+    &__warning {
+        @media (min-width: variables.$screen-m) {
+            width: 218px;
+        }
     }
 
     @extend .text-footer;

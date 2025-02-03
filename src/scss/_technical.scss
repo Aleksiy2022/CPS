@@ -38,6 +38,14 @@
             }
         }
 
+        @media(min-width: variables.$screen-m) {
+            padding-left: 24px;
+        }
+
+        @media(min-width: variables.$screen-l) {
+            padding-left: 32px;
+        }
+
         @extend .text-title;
     }
 
