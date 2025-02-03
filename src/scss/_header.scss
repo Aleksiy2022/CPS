@@ -3,17 +3,23 @@
 .header {
     display: flex;
     min-width: 320px;
-    min-height: 88px;
+    height: 88px;
     padding: 16px;
     align-items: center;
+    background-color: variables.$bg-color-header;
 
-    @media(min-width: variables.$screen-l) {
+    @media (min-width: variables.$screen-m) {
+        padding: 24px;
+    }
+
+    @media(min-width: variables.$screen-xl) {
         display: none;
     }
 
     &__logo {
         position: relative;
         margin-right: auto;
+        align-items: center;
 
         @media (min-width: variables.$screen-m) {
             margin-left: 43px;

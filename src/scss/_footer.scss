@@ -1,3 +1,4 @@
+@use '_variables';
 @use '_mixins';
 
 .footer {
@@ -6,6 +7,13 @@
     align-items: center;
     padding: 16px 16px 19px 16px;
     gap: 16px;
+    border-top: 1px solid variables.$border-color-footer;
+    background-color: variables.$bg-color-footer;
+
+    @media(min-width: variables.$screen-xl) {
+        max-width: 1120px;
+        grid-area: footer;
+    }
 
     &__developer-info {
         display: flex;

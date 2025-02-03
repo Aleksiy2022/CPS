@@ -20,5 +20,11 @@
         margin-right: 0;
     }
 
+    &--hidden {
+        @media(min-width: variables.$screen-xl) {
+            display: none;
+        }
+    }
+
     @extend .text;
 }

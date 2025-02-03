@@ -52,3 +52,22 @@
     font-size: variables.$font-size-small;
     color: variables.$text-color-content--lighter;
 }
+
+.text-menu__email {
+    line-height: variables.$line-height-large;
+    font-size: variables.$font-size-medium;
+    letter-spacing: variables.$letter-spacing-narrower;
+    color: variables.$text-color-content;
+    font-weight: variables.$font-weight-larger;
+    font-style: normal;
+}
+
+.text-menu__tel {
+    font-size: variables.$font-size-largest;
+    font-style: normal;
+    color: variables.$text-color-content;
+}
+
+.text-lang-switcher__link {
+    @extend .text;
+}

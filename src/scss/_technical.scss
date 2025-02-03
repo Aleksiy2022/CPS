@@ -9,6 +9,10 @@
         min-height: 322px;
     }
 
+    @media(min-width: variables.$screen-xl) {
+        max-width: 1120px;
+    }
+
     &__title {
         position: relative;
         margin: 0;
@@ -53,7 +57,7 @@
             grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
             grid-template-rows: repeat(auto-fit, 160px);
             column-gap: 24px;
-            row-gap: 16px;
+            gap: 16px;
             padding: 24px 24px 0 24px;
             margin-bottom: 24px;
             height: 184px;
@@ -62,7 +66,7 @@
             @media (min-width: variables.$screen-l) {
                 grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
                 padding: 24px 32px 0 32px;
-                column-gap: 32px;
+                gap: 32px;
             }
         }
     }

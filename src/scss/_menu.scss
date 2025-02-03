@@ -1,14 +1,144 @@
 @use '_variables';
+@use '_mixins';
 
 .menu {
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
     left: 0;
-    width: 320px;
-    min-height: 1024px;
-    padding: 23px 24px;
-    padding-bottom: 32px;
-    background-color: #ffffff;
+    width: 100%;
+    max-width: 360px;
+    min-height: 676px;
+    padding: 0 16px 32px 16px;
+    background-color: variables.$bg-color-menu;
     box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2);
+
+    @media(min-width: variables.$screen-m) {
+        padding: 0 24px 32px 24px;
+        width: 320px;
+        height: 100%;
+    }
+
+    @media(min-width: variables.$screen-xl) {
+        position: relative;
+        display: flex;
+        grid-area: aside;
+        padding-right: 32px;
+        box-shadow: none;
+    }
+
+    &__header {
+        display: flex;
+        width: 100%;
+        height: 88px;
+        align-items: center;
+
+        @media(min-width: variables.$screen-m) {
+            margin-bottom: 28px;
+        }
+
+        @media(min-width: variables.$screen-xl) {
+            padding-top: 32px;
+        }
+    }
+
+    &__logo {
+        margin-right: auto;
+        align-self: center;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        position: relative;
+        display: block;
+        height: 32px;
+        min-width: 210px;
+        padding: 7px 0;
+        text-align: left;
+        border: 0;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+        &:focus {
+            color: variables.$text-color-content--lighter;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 4px;
+                height: 32px;
+                top: 0;
+                left: -16px;
+                background-color: variables.$bg-color-menu__link-before;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+
+                @media(min-width: variables.$screen-m) {
+                    left: -24px;
+                }
+            }
+        }
+
+        @extend .text;
+    }
+
+    &__footer {
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        @media(min-width: variables.$screen-m) {
+            margin-top: 268px;
+        }
+
+        @media(min-width: variables.$screen-xl) {
+            margin-top: 241px;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 16px;
+        margin-bottom: 8px;
+
+        @media(min-width: variables.$screen-m) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__email {
+        @extend .text-menu__email;
+    }
+
+    &__tel {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.6px;
+        font-weight: 700;
+
+        @extend .text-menu__tel;
+    }
+
+    &--open {
+        display: flex;
+        z-index: 20;
+    }
 }
+

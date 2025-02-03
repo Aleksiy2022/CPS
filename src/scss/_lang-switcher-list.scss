@@ -1,0 +1,22 @@
+@use '_mixins';
+@use '_variables';
+
+.lang-switcher-list {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    font-weight: 500;
+    min-height: 24px;
+
+    &__link {
+        &:hover {
+            color: variables.$text-color-content--lighter;
+        }
+
+        &:focus {
+            color: variables.$text-color-content--lighter;
+        }
+
+        @extend .text-lang-switcher__link;
+    }
+}

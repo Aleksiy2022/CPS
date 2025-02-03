@@ -1,15 +1,23 @@
-$bg-color-page:                              #ffffff;
+$bg-color-page:                              #ebebeb;
+$bg-color-page--hidden:                      rgba(255, 255, 255, 0.9);
+$bg-color-header:                            #ffffff;
 $bg-color-header-pseudoelements:             #eaeaea;
 $bg-color-services:                          #f8f8f8;
 $bg-color-services__title-before:            #41F6D7;
 $bg-color-main-nav__link--active:            #ffffff;
 $bg-color-menu:                              #ffffff;
+$bg-color-menu__link-before:                 #41F6D7;
 $bg-color-navigation__link-focus-before:     #41F6D7;
 $bg-color-brand:                             #ffffff;
 $bg-color-brands:                            #f8f8f8;
 $bg-color-technical:                         #f8f8f8;
 $bg-color-technical__wrapper:                #ffffff;
 $bg-color-offers:                            #f8f8f8;
+$bg-color-offers__list:                      #ffffff;
+$bg-color-offers-details-before:             #eaeaea;
+$bg-color-swiper-bullet:                     #bebebe;
+$bg-color-swiper-bullet--active:             #B5B6BC;
+$bg-color-footer:                            #f8f8f8;
 
 $border-color-sections:                      #D9FFF5;
 $border-color-main-nav__link--active:        #B8FFEC;
@@ -18,6 +26,7 @@ $border-color-technical__wrapper:            #eaeaea;
 $border-color-brands__title:                 #D9FFF5;
 $border-color-technical__title:              #D9FFF5;
 $border-color-offers__title:                 #D9FFF5;
+$border-color-footer:                        #D9FFF5;
 
 $shadow-color-menu:                          rgba(14, 24, 80, 0.2);
 
@@ -36,6 +45,7 @@ $font-weight-larger:          500;
 $font-size-small:             14px;
 $font-size-medium:            16px;
 $font-size-large:             28px;
+$font-size-largest:           32px;
 
 $letter-spacing-wider:        0.2px;
 $letter-spacing-narrower:    -0.2px;

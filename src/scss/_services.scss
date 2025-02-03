@@ -13,6 +13,10 @@
         padding: 42px 0 42px 0;
     }
 
+    @media(min-width: variables.$screen-xl) {
+        max-width: 1120px;
+    }
+
     &__menu {
         position: relative;
         margin-bottom: 24px;
@@ -49,7 +53,7 @@
             width: 4px;
             height: 40px;
             left: -16px;
-            background-color: #41F6D7;
+            background-color: variables.$bg-color-services__title-before;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
 

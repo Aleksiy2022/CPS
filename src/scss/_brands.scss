@@ -9,6 +9,10 @@
         min-height: 322px;
     }
 
+    @media(min-width: variables.$screen-xl) {
+        max-width: 1120px;
+    }
+
     &__title {
         position: relative;
         margin: 0;
@@ -64,6 +68,12 @@
                 padding: 24px 32px 0 32px;
                 column-gap: 32px;
             }
+        }
+    }
+
+    &__item {
+        @media (min-width: variables.$screen-m) {
+            padding: 0 !important;
         }
     }
     

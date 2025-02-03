@@ -8,8 +8,77 @@
 </head>
 
 <body class="page">
+    <aside class="menu">
+        <header class="menu__header">
+            <button class="icon-btn menu-btn icon-btn--hidden">
+                <img src="images/menu/burger.svg" alt="закрыть меню">
+            </button>
+            <a class="menu__logo">
+                <img src="images/logo/CPSLogo.svg" alt="логотип компании">
+            </a>
+            <button class="icon-btn menu-btn">
+                <img src="images/menu/search.svg" alt="закрыть меню">
+            </button>
+        </header>
+        <nav class="menu__navigation">
+            <ul class="menu__list list-reset">
+                <li class="menu__item">
+                    <a href="#" class="menu__link link-reset" tabindex="0">Ремонт техники</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link link-reset" tabindex="1">Услуги и сервисы</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link link-reset" tabindex="3">Корпоративным клиентам</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link link-reset" tabindex="4">Продавцам техники</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link link-reset" tabindex="5">Партнерам</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link link-reset" tabindex="6">Производителям</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link link-reset" tabindex="7">Наши сервисные центры</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link link-reset" tabindex="8">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <footer class="menu__footer">
+            <ul class="icons-list list-reset">
+                <li class="icons-list__item">
+                    <button class="icon-btn">
+                        <img src="images/header/icons/tel.svg" alt="позвонить">
+                    </button>
+                </li>
+                <li class="icons-list__item">
+                    <button class="icon-btn">
+                        <img src="images/header/icons/chat.svg" alt="написать в чат">
+                    </button>
+                </li>
+                <li class="icons-list__item">
+                    <button class="icon-btn">
+                        <img src="images/header/icons/profile.svg" alt="посмотреть профиль">
+                    </button>
+                </li>
+            </ul>
+            <address class="menu__contacts">
+                <a class="menu__email link-reset" href="mailto:mail@cps.com">mail@cps.com</a>
+                <a class="menu__tel link-reset" href="tel:+78008908900">8&nbsp;800&nbsp;890 8900</a>
+            </address>
+            <ul class="lang-switcher-list list-reset">
+                <li class="lang-switcher-list__item"><a href="#" class="lang-switcher-list__link link-reset">RU</a></li>
+                <li class="lang-switcher-list__item"><a href="#" class="lang-switcher-list__link link-reset">EN</a></li>
+                <li class="lang-switcher-list__item"><a href="#" class="lang-switcher-list__link link-reset">CH</a></li>
+            </ul>
+        </footer>
+    </aside>
     <header class="header">
-        <button class="icon-btn">
+        <button class="icon-btn menu-btn">
             <img src="images/header/icons/menu.svg" alt="посмотреть меню">
         </button>
         <div class="header__logo">
@@ -56,7 +125,7 @@
                         <button class="icon-btn">
                             <span>Оставить заявку</span>
                             <img src="images/services/repair.svg" alt="оставить заявку">
-                        </bytton>
+                            </bytton>
                     </li>
                     <li class="interactive-icons__item">
                         <button class="icon-btn">
@@ -68,7 +137,8 @@
                 <nav class="main-nav">
                     <ul class="main-nav__list list-reset">
                         <li class="main-nav__item">
-                            <a class="main-nav__link link-reset main-nav__link--active" href="#">Ремонтируемые устройства</a>
+                            <a class="main-nav__link link-reset main-nav__link--active" href="#">Ремонтируемые
+                                устройства</a>
                         </li>
                         <li class="main-nav__item">
                             <a class="main-nav__link link-reset" href="#">Дополнительные услуги</a>
@@ -90,17 +160,20 @@
             </div>
             <article class="about">
                 <div class="about__content">
-                    <p class="about__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только 
+                    <p class="about__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                        Только
                         у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
 
                         Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
-                        большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+                        большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по
+                        рекомендациям
                         и, в свою очередь, советуют нас родным и близким.
                         Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
                         отремонтировать свой ноутбук Dell с официальной гарантией производителя.
 
                         Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
-                        большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+                        большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по
+                        рекомендациям
                         и, в свою очередь, советуют нас родным и близким.
                     </p>
                     <button class="btn about__btn">
@@ -317,6 +390,11 @@
         </section>
         <section class="offers">
             <h2 class="offers__title">Цены на услуги</h2>
+            <div class="offers__column-info">
+                <span>Ремонтные услуги</span>
+                <span>Цена</span>
+                <span>Срок</span>
+            </div>
             <div class="offers__container swiper offers__swiper">
                 <ul class="swiper-wrapper offers__list list-reset">
                     <li class="swiper-slide offers__item">
@@ -388,20 +466,23 @@
                 <div class="offers__pagination swiper-pagination"></div>
             </div>
             <p class="offers__info">
-                Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
+                Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения
+                коммерческого предложения на постоянное обслуживание, оставьте заявку.
             </p>
             <button class="offers__order">
                 <span>Получить коммерческое предложение</span>
             </button>
         </section>
-        <footer class="footer">
-            <div class="footer__developer-info">
-                <span class="footer__developer-year">© 2019 CPS</span>
-                <span class="footer__developer-name">Разработано командой Apesong</span>
-            </div>
-            <a class="footer__link link-reset" href="#">Политика конфиденциальности</a>
-            <span class="footer__warning">Информация, размещенная на данной странице, не является публичной офертой</span>
-        </footer>
     </main>
+    <footer class="footer">
+        <div class="footer__developer-info">
+            <span class="footer__developer-year">© 2019 CPS</span>
+            <span class="footer__developer-name">Разработано командой Apesong</span>
+        </div>
+        <a class="footer__link link-reset" href="#">Политика конфиденциальности</a>
+        <span class="footer__warning">Информация, размещенная на данной странице, не является публичной
+            офертой</span>
+    </footer>
 </body>
+
 </html>

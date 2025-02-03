@@ -4,7 +4,7 @@
 .interactive-icons {
     display: none;
 
-    @media (min-width: variables.$screen-l) {
+    @media (min-width: variables.$screen-xl) {
         position: absolute;
         display: flex;
         padding-right: 32px;
