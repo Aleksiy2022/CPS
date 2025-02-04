@@ -237,6 +237,7 @@
         }
 
         &:hover {
+            opacity: 0.6;
             cursor: pointer;
         }
     }
@@ -272,6 +273,7 @@
         @extend .text;
 
         &:hover {
+            opacity: 0.6;
             cursor: pointer;
         }
     }

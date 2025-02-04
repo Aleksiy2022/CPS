@@ -13,7 +13,7 @@
             <button class="icon-btn menu-btn icon-btn--hidden">
                 <img src="images/menu/burger.svg" alt="закрыть меню">
             </button>
-            <a class="menu__logo">
+            <a class="menu__logo link-reset">
                 <img src="images/logo/CPSLogo.svg" alt="логотип компании">
             </a>
             <button class="icon-btn menu-btn">
@@ -26,7 +26,7 @@
                     <a href="#" class="menu__link link-reset" tabindex="0">Ремонт техники</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link link-reset" tabindex="1">Услуги и сервисы</a>
+                    <a href="#" class="menu__link link-reset menu__link--active" tabindex="1">Услуги и сервисы</a>
                 </li>
                 <li class="menu__item">
                     <a href="#" class="menu__link link-reset" tabindex="3">Корпоративным клиентам</a>
@@ -51,17 +51,17 @@
         <footer class="menu__footer">
             <ul class="icons-list list-reset">
                 <li class="icons-list__item">
-                    <button class="icon-btn">
-                        <img src="images/header/icons/tel.svg" alt="позвонить">
+                    <button class="icon-btn icon-btn--menu order-call-btn">
+                        <img src="images/header/icons/tel.svg" alt="заказать звонок">
                     </button>
                 </li>
                 <li class="icons-list__item">
-                    <button class="icon-btn">
-                        <img src="images/header/icons/chat.svg" alt="написать в чат">
+                    <button class="icon-btn icon-btn--menu callback-btn">
+                        <img src="images/header/icons/chat.svg" alt="обратная связь">
                     </button>
                 </li>
                 <li class="icons-list__item">
-                    <button class="icon-btn">
+                    <button class="icon-btn icon-btn--menu">
                         <img src="images/header/icons/profile.svg" alt="посмотреть профиль">
                     </button>
                 </li>
@@ -81,18 +81,18 @@
         <button class="icon-btn menu-btn">
             <img src="images/header/icons/menu.svg" alt="посмотреть меню">
         </button>
-        <div class="header__logo">
+        <a class="header__logo link-reset">
             <img src="images/logo/CPSLogo.svg" alt="логотип компании">
-        </div>
+        </a>
         <ul class="icons-list icons-list--display list-reset">
             <li class="icons-list__item">
-                <button class="icon-btn">
-                    <img src="images/header/icons/tel.svg" alt="позвонить">
+                <button class="icon-btn order-call-btn">
+                    <img src="images/header/icons/tel.svg" alt="заказать звонок">
                 </button>
             </li>
             <li class="icons-list__item">
-                <button class="icon-btn">
-                    <img src="images/header/icons/chat.svg" alt="написать в чат">
+                <button class="icon-btn callback-btn">
+                    <img src="images/header/icons/chat.svg" alt="обратная связь">
                 </button>
             </li>
             <li class="icons-list__item">
@@ -117,6 +117,31 @@
         </div>
     </header>
     <main class="main">
+        <form class="form callback-form" action="">
+            <button class="icon-btn callback-btn form__close-btn">
+                <img src="images/menu/burger.svg" alt="закрыть меню">
+            </button>
+            <h2 class="form__title">Обратная связь</h2>
+            <input class="form__input" type="text" name="name" placeholder="Имя">
+            <input class="form__input" type="tel" name="tel" placeholder="Телефон">
+            <input class="form__input" type="email" name="email" placeholder="Электронная почта">
+            <textarea class="form__comment" name="comment" placeholder="Сообщение"></textarea>
+            <p class="form__info">Нажимая “отправить”, вы даете согласие на <a class="form__link link-reset" href="#">обработку персональных данных</a> и соглашаетесь с нашей <a class="form__link link-reset" href="">политикой конфиденциальности</a></p>
+            <button class="form__button" href="#">
+                <img class="form__img" src="images/form/send.svg" alt="Картинка кнопки формы">
+            </button>
+        </form>
+        <form class="form order-call-form" action="">
+            <button class="icon-btn order-call-btn form__close-btn">
+                <img src="images/menu/burger.svg" alt="закрыть меню">
+            </button>
+            <h2 class="form__title">Заказать звонок</h2>
+            <input class="form__input" type="text" name="name" placeholder="Телефон">
+            <p class="form__info">Нажимая “отправить”, вы даете согласие на <a class="form__link link-reset" href="#">обработку персональных данных</a> и соглашаетесь с нашей <a class="form__link link-reset" href="">политикой конфиденциальности</a></p>
+            <button class="form__button" href="#">
+                <img class="form__img" src="images/form/send.svg" alt="Картинка кнопки формы">
+            </button>
+        </form>
         <section class="services">
             <div class="services__menu">
                 <h1 class="services__title">Услуги и&nbsp;сервисы</h1>

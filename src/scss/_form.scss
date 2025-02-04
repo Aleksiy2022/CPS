@@ -1,0 +1,119 @@
+@use '_variables';
+@use '_mixins';
+
+.form {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    right: 0;
+    top: 0;
+    padding: 24px 16px;
+    min-width: 320px;
+    max-width: 440px;
+    min-height: 676px;
+    background-color: variables.$bg-color-form;
+    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2);
+
+    @media (min-width: variables.$form-screen-m) {
+        padding: 40px 32px;
+    }
+
+    &__close-btn {
+        @media (min-width: variables.$form-screen-l) {
+            transform: translateX(-104px);
+        }
+    }
+
+    &__title {
+        margin: 0;
+        margin-top: 40px;
+        position: relative;
+        margin-bottom: 24px;
+
+        @media (min-width: variables.$form-screen-m) {
+            margin-top: 0;
+            transform: translateY(-56px);
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 4px;
+            height: 40px;
+            left: -16px;
+            background-color: variables.$bg-color-form__title-before;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+
+            @media (min-width: variables.$form-screen-m) {
+                left: -32px;
+            }
+
+            @extend .text-title--active;
+        }
+    }
+
+    &__input {
+        padding: 12px 16px;
+        min-width: 288px;
+        min-height: 48px;
+        border-radius: 8px;
+        border: 1px solid variables.$border-color-form__input;
+
+        @media (min-width: variables.$form-screen-m) {
+            transform: translateY(-56px);
+        }
+
+        &::placeholder {
+            @extend .text-form-placeholder;
+        }
+    }
+
+    &__comment {
+        margin: 0;
+        padding: 12px 16px;
+        min-width: 288px;
+        min-height: 118px;
+        border-radius: 8px;
+        border: 1px solid variables.$border-color-form__input;
+
+        @media (min-width: variables.$form-screen-m) {
+            transform: translateY(-56px);
+        }
+
+        &::placeholder {
+            @extend .text-form-placeholder;
+        }
+    }
+
+    &__info {
+        margin: 0;
+
+        @media (min-width: variables.$form-screen-m) {
+            transform: translateY(-56px);
+        }
+
+        @extend .text-form__info;
+    }
+
+    &__link {
+        color: variables.$text-color-form__link;
+    }
+
+    &__button {
+        padding: 0;
+        margin-left: auto;
+        background: transparent;
+        border: none;
+
+        @media (min-width: variables.$form-screen-m) {
+            transform: translateY(-56px);
+        }
+    }
+
+    &--open {
+        display: flex;
+        z-index: 20;
+    }
+}

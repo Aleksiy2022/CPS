@@ -77,3 +77,16 @@
     line-height: variables.$line-height-smallest;
     color: variables.$text-color-content--lighter;
 }
+
+.text-form__info {
+    font-size: variables.$font-size-small;
+    line-height: variables.$line-height-smallest;
+    color: variables.$text-color-content--lighter;
+}
+
+.text-form-placeholder {
+    font-size: variables.$font-size-medium;
+    line-height: variables.$line-height-large;
+    letter-spacing: variables.$letter-spacing-narrower;
+    color: variables.$text-color-form__input-placeholder;
+}

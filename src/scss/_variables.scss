@@ -4,6 +4,7 @@ $bg-color-header:                            #ffffff;
 $bg-color-header-pseudoelements:             #eaeaea;
 $bg-color-services:                          #f8f8f8;
 $bg-color-services__title-before:            #41F6D7;
+$bg-color-form__title-before:                #41F6D7;
 $bg-color-main-nav__link--active:            #ffffff;
 $bg-color-menu:                              #ffffff;
 $bg-color-menu__link-before:                 #41F6D7;
@@ -18,12 +19,14 @@ $bg-color-offers-details-before:             #eaeaea;
 $bg-color-swiper-bullet:                     #bebebe;
 $bg-color-swiper-bullet--active:             #B5B6BC;
 $bg-color-footer:                            #f8f8f8;
+$bg-color-form:                              #ffffff;
 
 $border-color-sections:                      #D9FFF5;
 $border-color-main-nav__link--active:        #B8FFEC;
 $border-color-brand:                         #eaeaea;
-$border-color-technical__wrapper:            #eaeaea;
 $border-color-brands__title:                 #D9FFF5;
+$border-color-form__input:                   #eaeaea;
+$border-color-technical__wrapper:            #eaeaea;
 $border-color-technical__title:              #D9FFF5;
 $border-color-offers__title:                 #D9FFF5;
 $border-color-footer:                        #D9FFF5;
@@ -32,6 +35,8 @@ $shadow-color-menu:                          rgba(14, 24, 80, 0.2);
 
 $text-color-content:                         #1B1C21;
 $text-color-content--lighter:                #7E7E82;
+$text-color-form__link:                      #FF3E79;
+$text-color-form__input-placeholder:         #B5B6BC;
 
 $line-height-smallest:        16px;
 $line-height-small:           18px;
@@ -56,3 +61,6 @@ $screen-s:                    360px;
 $screen-m:                    768px;
 $screen-l:                    1120px;
 $screen-xl:                   1440px;
+
+$form-screen-m:               440px;
+$form-screen-l:               513px;
