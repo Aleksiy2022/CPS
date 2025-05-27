@@ -1,1 +1,1 @@
-Ссылка на сайт https://aleksiy2022.github.io/CPS/
+Хостинг текущего проекта: https://aleksiy2022.github.io/CPS/
